@@ -8,7 +8,7 @@ function Home(){
         <div className="section">
             <img src={banner} alt="banner" />
             <div className="content">
-                <h1>Create, Share <span>Forms</span> easily</h1>
+                <h1>Create & Share </h1>
                 <p>Form lets you create forms super simple. All you need to do is create a free account and you'll be all set. You can share the link of your form with others and see thier submissions. It's suitable for online MCQ exam and for job recruitments</p>
                 <Link to="/create" className="btn">get started</Link>
             </div>

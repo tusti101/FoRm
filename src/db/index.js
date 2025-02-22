@@ -33,6 +33,7 @@ export const getForms = async () => {
 
 export const getForm = async ops => {
     let docs = await firestore.collection("forms").get(ops)
+    console.log("miss",docs)
     let doc = docs.docs[0]
     doc = {...doc.data(), id: doc.id }
     return doc

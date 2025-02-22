@@ -10,26 +10,28 @@ import { expired } from '../utils'
 
 function Fill(){
     const { id } = useParams()
+    // console.log("Missie",id)
 
     const [form, setForm] = useState(null)
     const [msg, setMsg] = useState('')
     const [submitted, setSubmitted] = useState(false)
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
-    useEffect(() => {
-        if(!localStorage.getItem('gfc-user')) return
-        const fetchData = async () => {
-            try{
-                let frm = await getForm({ id })
-                setForm(frm)
-                setLoading(false)
-            }catch(e){
-                setLoading(false)
-                setMsg(e.message)
-            }
-        }
-        fetchData()
-    }, [id])
+    // useEffect(() => {
+    //     if(!localStorage.getItem('gfc-user')) return
+    //     const fetchData = async () => {
+    //         try{
+    //             let frm = await getForm({ id })
+    //             setForm(frm)
+    //             console.log("missssss",form)
+    //             setLoading(false)
+    //         }catch(e){
+    //             setLoading(false)
+    //             setMsg(e.message)
+    //         }
+    //     }
+    //     fetchData()
+    // }, [])
 
     return (
         <div>
