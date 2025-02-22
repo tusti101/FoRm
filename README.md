@@ -1,5 +1,5 @@
 # Clone-google-forms
-Made for DT Frontend Challenges
+Only Frontend Challenges
 
 <h1>Installing Node Modules</h1>
 npm i
