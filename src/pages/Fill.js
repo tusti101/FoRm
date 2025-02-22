@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { useParams } from 'react-router-dom'
 
-import { getForm } from "../db"
+// import { getForm } from "../db"
 
 import RenderReactiveForm from '../components/RenderReactiveForm'
 
 import { expired } from '../utils'
 
 function Fill(){
-    const { id } = useParams()
+    // const { id } = useParams()
     // console.log("Missie",id)
 
     const [form, setForm] = useState(null)
